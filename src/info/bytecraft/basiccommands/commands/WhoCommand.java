@@ -30,9 +30,9 @@ public class WhoCommand implements CommandExecutor{
 					if(Bukkit.getOnlinePlayers().length > 1){
 						if(sender.canSee(player)){
 						list.append(player.getDisplayName() +", ");
+						}
 					}
-						list.append(player.getDisplayName());
-					}
+					list.append(player.getDisplayName());
 				}
 				sender.sendMessage(ChatColor.DARK_AQUA + "~*~*~*~* " + ChatColor.GOLD + Bukkit.getOnlinePlayers().length + " player(s) online" + ChatColor.DARK_AQUA + " ~*~*~*~*");
 				sender.sendMessage(ChatColor.GOLD + "Online Players: " + list.toString());

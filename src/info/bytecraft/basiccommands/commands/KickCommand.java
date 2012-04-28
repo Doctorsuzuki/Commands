@@ -27,9 +27,12 @@ public class KickCommand implements CommandExecutor {
 						}
 					}
 				}else{
-					
+					target.kickPlayer(ChatColor.RED + "You were kicked by " + ChatColor.DARK_RED + "GOD");
+					Bukkit.broadcastMessage(target.getDisplayName() + ChatColor.DARK_AQUA + " was kicked by " + ChatColor.RED + "GOD");
+					return true;
 				}
 			}
+			return true;
 		}
 		return false;
 	}
