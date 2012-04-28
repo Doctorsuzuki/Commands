@@ -1,0 +1,84 @@
+name: Basic commands
+version: 0.2
+author: Sabersamus
+database: true
+main: info.bytecraft.basiccommands.BasicCommands
+loadafter: [Bytes]
+commands:
+    ban:
+        description: ban an unwanted player from the server
+        usage: /<command> [player]
+        permission: bytecraft.ban
+    kick:
+        description: kick a player from the server
+        usage: /<command> [player]
+        permission: bytecraft.kick
+    item:
+        description: give yourself an item
+        usage: /<command> [material] (amount) (data)
+        permission: bytecraft.item
+    give:
+        description: give another player an item
+        usage: /<command> [player] [material] (amount) (data)
+        permission: bytecraft.give
+    god:
+        description: use the default red god
+        usage: /<command> [message]
+        permission: bytecraft.god
+    say:
+        description: use god, if you have a special god color it will use that, or else it will be red
+        usage: /<command> [message]
+        permission: bytecraft.god
+    spawn:
+        description: return to spawn
+        usage: /<command>
+    clear:
+        description: clear your inventory
+        usage: /<command>
+    who:
+        description: see who is online
+        usage: /<command> 
+    cmob:
+        description: spawn a mob
+        usage: /<command> [type]
+        permission: bytecraft.mobspawn
+    poof:
+        description: vanish from sight
+        usage: /<command>
+        permission: bytecraft.vanish
+        aliases: [vanish, v]
+    gamemode:
+        description: toggle your gamemode
+        usage: /<command>
+        permission: bytecraft.gamemode
+    survival:
+        description: change to survival mode
+        usage: /<command>
+        permission: bytecraft.gamemode
+    creative:
+        description: change to creative mode
+        usage: /<command>
+        permission: bytecraft.gamemode
+    nuke:
+        description: remove all the mobs close to you
+        usage: /<command>
+        permission: bytecraft.nuke
+    summon:
+        description: summon a player to you
+        usage: /<command> [player]
+        permission: bytecraft.summon
+    kill:
+        description: kill yourself
+        usage: /<command>
+    t:
+        description: strike lightning at a player
+        usage: /<command> [player]
+        permission: bytecraft.smite
+    killp:
+        description: strike a player with lightning and kill them
+        usage: /<command> [player]
+        permission: bytecraft.smite.kill
+    inv:
+        description: open a players inventory
+        usage: /<command> [player]
+        permission: bytecraft.inv
